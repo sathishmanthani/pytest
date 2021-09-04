@@ -9,7 +9,7 @@ cd pytest
 git init .
 git remote add origin https://github.com/sathishmanthani/pytest.git
 git pull origin master
-python -m pytest -v
+python -m pytest -v --cov --cov-report=xml:coverage.xml
 '''
         git(url: 'https://github.com/sathishmanthani/pytest.git', branch: 'master', poll: true)
       }
