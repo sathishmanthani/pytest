@@ -19,7 +19,7 @@ else
     git pull origin master
 fi
 
-python -m pytest -v --cov --cov-report=xml:coverage.xml
+python -m pytest -v 
 '''
         git(url: 'https://github.com/sathishmanthani/pytest.git', branch: 'master', poll: true)
       }
